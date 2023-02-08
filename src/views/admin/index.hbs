@@ -1,0 +1,45 @@
+{{> navegacion}}
+
+<div class="container pt-5 body">
+    <h1>Lista de Usuarios</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-3">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" >
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre Completo</th>
+                            <th scope="col">Area</th>
+                            <th scope="col"></th>
+
+
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="col">Nombre Completo</th>
+                            <th scope="col">Area</th>
+                            <th scope="col"></th>
+
+
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                      {{#each usuarios}}
+                        <tr>
+                          <td>{{fullname}}</td>
+                          <td>{{area}}</td>
+                          <td>
+                                <button class="btn btn-outline-success btn-block"> Ver Informacion</button>
+                            </td>
+                        </tr>
+                      {{/each}}
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
