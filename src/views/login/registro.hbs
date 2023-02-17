@@ -1,0 +1,32 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="txt3 text-center"><b>NUEVO REGISTRO</b> </h1>
+                </div>
+                <div class="card-body">
+                    <form action="/registro" method="POST">
+                        <div class="form-group">
+                            <label > <b> Ingresar Nombre </b></label>
+                            <input type="text" class="form-control mt-2" id="fullname" name="fullname" placeholder="Nombre Completo" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label > <b> Ingresar UserName </b></label>
+                            <input type="text" class="form-control mt-2" id="username" name="username" placeholder="UserName">
+                        </div>
+                        <div class="form-group">
+                            <label > <b> Ingresar Password </b></label>
+                            <input type="password" class="form-control mt-2" id="password" name="password" placeholder="password">
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-success"> Guardar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

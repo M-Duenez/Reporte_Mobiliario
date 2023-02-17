@@ -1,15 +1,20 @@
 <div class="container p-4">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mx-auto">
             <div class="card">
+                <div class="card-header">
+                    <h1 class="txt3 text-center"><b>NUEVA AREA</b> </h1>
+                </div>
                 <div class="card-body">
                     <form action="/areas/addArea" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="area" name="area" placeholder="Area" autofocus>
+                            <label > <b class="txt3"> Ingresar Nombre de Area </b></label>
+                            <input type="text" class="form-control mt-2" id="area" name="area" placeholder="Area" autofocus>
                         </div>
-                        <div class="form-froup">
-                            <button type="submit" class="btn btn-success btn-block"> Guardar</button>
-                            
+                        <div class="form-group mt-3">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-success"> Guardar</button>
+                            </div>
                         </div>
                     </form>
                 </div>
